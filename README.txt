@@ -69,17 +69,18 @@ commande "tree -L 2", elle permet d'afficher l'arbre de fichier sur 2 étages/br
 │   
 └── analyse
     ├── conda
-	│   └── env_conda.yaml
-	├── help
-	│   └── README.txt
+    │   └── env_conda.yaml
+    ├── help
+    │   ├── README.txt
+    │   └── README_R.txt
     ├── genome
     │   ├── Genome_de_référence.fasta
     │   └── Annotation.gtf
     ├── script
-	│   ├── create_csv.py
-	│   ├── enrich_counts.py
-	│   ├── convert_excel.py
-	│   └── code_degs.R 
+    │   ├── create_csv.py
+    │   ├── enrich_counts.py
+    │   ├── convert_excel.py
+    │   └── code_degs.R 
     ├── fastq
     │   ├── sample1_R1.fastq.gz
     │   ├── sample1_R2.fastq.gz

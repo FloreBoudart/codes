@@ -13,7 +13,7 @@ library(readxl)
 library(ggplot2)
 library(openxlsx)
 
-
+# Chemin où seront enregistrés les résultats générés par ce code
 output_dir <- "/mnt/data-backup/boudart/results/r_analysis"
 
 if (!dir.exists(output_dir)) {

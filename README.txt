@@ -60,8 +60,9 @@ Les résultats qui sont générés par chaque outils :
 
 
 Pour l'utiliser, il faut des données brutes sorties de NGS au format fastq.gz. Ainsi que le 
-fichier d'annotation et le génome de référence qui sont associés. Pour les déziper, effectues 
-la commande "gunzip nom_du_fichier.gz"  
+fichier d'annotation et le génome de référence qui sont associés. Si le fichier d'annotation est 
+au format gff, il faut faire la commande "gffread fichier.gff -T -o fichier.gtf" pour qu'il n'y ai 
+pas d'erreur. Pour les déziper, effectues la commande "gunzip nom_du_fichier.gz".
 
 L'arborescence des fichiers doit être comme dans l'exemple ci-dessous. Tu peux vérifier avec la 
 commande "tree -L 2", elle permet d'afficher l'arbre de fichier sur 2 étages/branches.
@@ -69,18 +70,18 @@ commande "tree -L 2", elle permet d'afficher l'arbre de fichier sur 2 étages/br
 │   
 └── analyse
     ├── conda
-    │   └── env_conda.yaml
-    ├── help
-    │   ├── README.txt
-    │   └── README_R.txt
+	│   └── env_conda.yaml
+	├── help
+	│   ├── README.txt
+	│   └── README_R.txt
     ├── genome
     │   ├── Genome_de_référence.fasta
     │   └── Annotation.gtf
     ├── script
-    │   ├── create_csv.py
-    │   ├── enrich_counts.py
-    │   ├── convert_excel.py
-    │   └── code_degs.R 
+	│   ├── create_csv.py
+	│   ├── enrich_counts.py
+	│   ├── convert_excel.py
+	│   └── code_degs.R 
     ├── fastq
     │   ├── sample1_R1.fastq.gz
     │   ├── sample1_R2.fastq.gz
